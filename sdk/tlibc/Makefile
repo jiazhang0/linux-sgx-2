@@ -34,7 +34,6 @@ include ../../buildenv.mk
 CFLAGS   += $(ENCLAVE_CFLAGS)
 ASFLAGS  := $(CFLAGS)
 CFLAGS   += -std=c99
-CFLAGS   += -DUSE_MALLOC_DEPRECATED # Required by Rust SGX SDK
 CXXFLAGS += $(ENCLAVE_CXXFLAGS) -fno-exceptions -fno-rtti
 
 CPPFLAGS += -I.                          \
