@@ -58,7 +58,7 @@ LDFLAGS += $(COMMON_LDFLAGS) -Wl,--version-script=sgx_enclave_common.lds -Wl,--g
 DIR1 := $(LINUX_PSW_DIR)/enclave_common
 DIR2 := $(LINUX_PSW_DIR)/urts/linux
 
-LIB += -L$(COMMON_DIR)/se_wrapper_psw
+LIB += -L$(COMMON_DIR)/se_wrapper_psw -L$(LINUX_PSW_DIR)/uae_service/linux
 
 OBJ := sgx_enclave_common.o edmm_utility.o
 
